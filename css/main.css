@@ -30,22 +30,22 @@ p, a {
 /* FONTS */
 @font-face {
     font-family: header;
-    src: url(/font/The\ Goodfather\ DEMO.otf);
+    src: url('../font/The\ Goodfather\ DEMO.otf');
 }
 
 @font-face {
     font-family: subheader;
-    src: url(/font/impact.ttf);
+    src: url('../font/impact.ttf');
 }
 
 @font-face {
     font-family: bodybold;
-    src: url(/font/AVGARDD.TTF);
+    src: url('../font/AVGARDD.TTF');
 }
 
 @font-face {
     font-family: body;
-    src: url(/font/AVGARDN.TTF);
+    src: url('../font/AVGARDN.TTF');
 }
 
 .backToTop {
@@ -346,14 +346,14 @@ p, a {
     height: 3vw;
     position: absolute;
     z-index: 2;
-    background-image: url(/img/downArrow.png);
+    background-image: url('../img/downArrow.png');
     background-size: 3vw 3vw;
     background-repeat: no-repeat;
     transition: 0.3s ease;
 }
 
 .down:hover {
-    background-image: url(/img/downArrow_hover.png);
+    background-image: url('../img/downArrow_hover.png');
     transform: scale(1.1);
 }
 
@@ -554,7 +554,7 @@ p, a {
     justify-content: center;
     align-items: center;
     margin: 12vw 0 10vw 0;
-    background-image: url(/img/Background1-01.png);
+    background-image: url('../img/Background1-01.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
 }
@@ -1663,7 +1663,7 @@ p, a {
         justify-content: center;
         align-items: center;
         margin: 14vw 0 10vw 0;
-        background-image: url(/img/Background1-01.png);
+        background-image: url('../img/Background1-01.png');
         background-size: 100vw auto;
         background-repeat: no-repeat;
     }
