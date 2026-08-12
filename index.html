@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+</head>
+
+<body>
+
+    <a href="#" id="backToTop" class="backToTop" 
+    data-primary="img/BavkTop-02.png" 
+    data-hover="img/BavkTop-03.png">
+        <img src="img/BavkTop-02.png" id="bttIcon" alt="Back to Top">
+    </a>
+
+    <div class="navigation">
+        <div class="leftNavigation">
+            <a href="index.html" id="logoLink" 
+            data-primary="img/Logo_Website-01.png" 
+            data-hover="img/Logo_Website-02.png">
+                <img src="img/Logo_Website-01.png" id="logoImg">
+            </a>
+        </div>
+        <div class="rightNavigation desktop-links">
+            <a class="notActiveNav" href="project.html">Projects</a>
+            <a class="notActiveNav" href="#aboutMeSection">About</a>
+            <a class="notActiveNav" href="#footerSection">Contact</a>
+        </div>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <img src="img/menu-01.png" alt="Menu">
+        </div>
+    </div>
+
+    <div id="sideDrawer" class="side-drawer">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="drawer-links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="#aboutMeSection">About</a>
+            <a href="#footerSection">Contact</a>
+        </div>
+    </div>
+
+    <div id="drawerOverlay" class="drawer-overlay" onclick="toggleMenu()"></div>
+
+    <div class="header">
+        <div class="leftHeader">
+            <img src="img/Header.png">
+        </div>
+        <div class="rightHeader">
+            <img src="img/Portfolio.png">
+            <div class="bottomRow">
+                <p class="hoverName">
+                    <span>G</span><span>R</span><span>A</span><span>C</span><span>I</span><span>E</span><span>L</span><span>L</span><span>A</span>
+                </p>
+                <div class="smallHeader"><img src="img/HeaderSmall.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="typeOfWork">
+        <p>3D Design</p>
+        <p>Motion Graphics</p>
+        <p>2D Design</p>
+        <p>Creative Coding</p>
+        <p>Branding</p>
+    </div>
+
+    <div class="divider">
+        <img src="img/divider-01.png">
+        <a class="down" href="#mainContent"></a>
+    </div>
+
+    <div id="mainContent" class="mainContent">
+        <div class="slider">
+            <img class="scroll-icon" src="img/iconSliderProgress-01.png">
+        </div>
+        <div class="content">
+            <div class="selectedWorks reveal">
+                <div class="leftSelected">
+                    <h4>Selected Works</h4>
+                    <p>A curation of projects where storytelling meets technical precision.</p>
+                    <p>This selection highlights my journey through 3D visualization, motion design, and the iterative processes that turn complex concepts into functional, aesthetic realities.</p>
+                    <a href="project.html">More Works<img src="img/IconTopRight-02.png"></a>
+                </div>
+                <div class="rightSelected">
+                    <a href="terang2025.html" class="selectedPanel">
+                        <h1>01</h1>
+                        <img src="img/terang2025/thumbnail.jpg">
+                        <h2>TERANG 2025</h2>
+                        <p>Terang 2025 is a projection mapping competition held by wearefilamen in George Town, Penang with the theme Rojak.</p>
+                    </a>
+                    <a href="mocap.html" class="selectedPanel">
+                        <h1>02</h1>
+                        <img src="img/4.jpg">
+                        <h2>Ashita Nova</h2>
+                        <p>Ashita Nova is a Motion Capture project capturing the essence of New Year Celebration with the theme of Hope.</p>
+                    </a>
+                    <a href="platof.html" class="selectedPanel">
+                        <h1>03</h1>
+                        <img src="img/platof/led-01.png">
+                        <h2>Platof</h2>
+                        <p>PLATOF (Platform of the Future) is a branding and design project about a futuristic yet daily-wearable platform shoe.</p>
+                    </a>
+                </div>
+            </div>
+            <div id="aboutMeSection" class="aboutMePage reveal">
+                <div class="aboutLeft">
+                    <img src="img/IMG.png">
+                    <div class="interest">
+                        <p>Music</p>
+                        <p>Craft</p>
+                        <p>Illustration</p>
+                        <p>Games</p>
+                        <p>Programming</p>
+                    </div>
+                </div>
+                <div class="aboutRight reveal">
+                    <div class="aboutNameRow">
+                        <h2>Graciella Natalie</h2>
+                        <a><img src="img/IconTopRight-02.png"></a>
+                    </div>
+                    <h3>About Me</h3>
+                    <p>A passionate 3D enthusiast and designer specializing in 3D modelling, motion graphics, 2D designs, and creative coding, with hands-on experience in freelancing and collaborative projects focused on booth design, packaging design, and branding.</p>
+                    <div class="aboutDivided reveal">
+                        <div class="education">
+                            <h3>Education</h3>
+                            <div class="educationDivided"><h4>Sampoerna University, VCD  <h6>2022 - recent</h6></h4></div>
+                            <p>Bachelor of Design - 4.00 GPA</p>
+                        </div>
+                        <div class="work">
+                            <h3>Work Experience </h3>
+                            <div class="educationDivided"><h4>Nouverior Studio<h6>Feb - Aug 2024</h6></h4></div>
+                            
+                            <p>3D Modelling Internship</p>
+                        </div>
+                    </div>
+                    <div class="aboutDivided reveal">
+                        <div class="education">
+                            <h3>Organizational</h3>
+                            <div class="educationDivided"><h4>Sandyakala  <h6>2024 - recent</h6></h4></div>
+                            <p>Creative Director, 3D Modeller</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service reveal">
+                <div class="serviceHeader">
+                    <h2>Services</h2>
+                    <p class="headerDesc">Providing end-to-end creative solutions by bridging 3D, motion, branding, and coding.</p>
+                </div>
+                <div class="serviceSection">
+                    <a href="project.html" class="serviceIndividual">
+                        <div class="serviceTop">
+                            <h3>3D Modelling</h3> 
+                            <img src="img/IconTopRight-02.png" class="arrowIcon">
+                        </div>
+                        <p class="serviceDesc">Crafting high-quality 3D assets for various needs.</p>
+                        <img src="img/platof/19.png" class="serviceExample">
+                    </a>
+                    <a href="project.html" class="serviceIndividual">
+                        <div class="serviceTop">
+                            <h3>Motion Graphics</h3> 
+                            <img src="img/IconTopRight-02.png" class="arrowIcon">
+                        </div>
+                        <p class="serviceDesc">Bringing designs to life through dynamic animation and rhythmic.</p>
+                        <img src="img/4.jpg" class="serviceExample">
+                    </a>
+                    <a href="project.html" class="serviceIndividual">
+                        <div class="serviceTop">
+                            <h3>Branding Product</h3> 
+                            <img src="img/IconTopRight-02.png" class="arrowIcon">
+                        </div>
+                        <p class="serviceDesc">Building cohesive visual identities to bridge gaps.</p>
+                        <img src="img/katharakyat/BlindBox.png" class="serviceExample">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq reveal">
+        <h4>What do you want to know?</h4>        
+        <h2>Frequently Asked Question</h2>
+        
+        <div class="collapsible">What is your typical project timeline?<img src="img/downArrow_hover.png"></div>
+        <div class="collapsibleContent">
+            <p>Every project is unique, but a standard 3D or motion project usually takes between 1 to 2 weeks from initial concept to final delivery. For more complex technical tools or large-scale projects, we can discuss a custom roadmap.</p>
+        </div>
+
+        <div class="collapsible">How do we get started on a project?<img src="img/downArrow_hover.png"></div>
+        <div class="collapsibleContent">
+            <p>It starts with a brief. Once we align on the goals, I move into the concept and blocking phase. You’ll receive updates at every major milestone to ensure the vision is on track.</p>
+        </div>
+
+        <div class="collapsible">What software and tools do you use?<img src="img/downArrow_hover.png"></div>
+        <div class="collapsibleContent">
+            <p>My primary software includes Blender for 3D projects, the Adobe Creative Suite (After Effects, Substance Painter, Illustrator) for textures and motion, and HTML, CSS, JavaScript, Python for coding related project.</p>
+        </div>
+    </div>
+    <div class="interested reveal">
+        <h1>Let us Work Together</h1>
+        <a href="#footerSection"><img src="img/downArrow.png"></a>
+    </div>
+    
+
+    <div id="footerSection" class="footer">
+        <div class="topFooter">
+            <div class="topTitle">
+                <h2>Get in Touch</h2>
+                <h3>Jakarta, Indonesia</h3>
+            </div>
+            
+            <div class="topContact">
+                <h3>graciella.natalie.04@gmail.com</h3>
+                <h3>+62877 7892 0831</h3>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div class="leftFooter">
+                <div class="navGrid">
+                    <a href="#">Home</a> <a href="project.html">Projects</a> <a href="#aboutMeSection">About</a>
+                    <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank">Instagram</a>
+                </div>
+            </div>
+
+            <div class="rightFooter">
+                <div class="socialGroup">
+                    <h4>Socials</h4>
+                    <div class="social">
+                        <a href="mailto:graciella.natalie.04@gmail.com"><img src="img/ICON-01.png"></a>
+                        <a href="https://wa.me/6287778920831" target="_blank"> <img src="img/ICON-02.png"></a>
+                        <a href="https://www.linkedin.com/in/graciella-natalie-b41511276"><img src="img/ICON-03.png"></a>
+                        <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank"><img src="img/ICON-04.png"></a>
+                        <a href="https://www.tiktok.com/@g_ella_04" target="_blank"><img src="img/ICON-05.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>© 2026 Graciella Natalie. All Rights Reserved.</p>
+        </div>
+    </div>
+
+<script>
+
+function toggleMenu() {
+    const drawer = document.getElementById("sideDrawer");
+    const overlay = document.getElementById("drawerOverlay");
+    
+    drawer.classList.toggle("open");
+    overlay.classList.toggle("active");
+    
+    // Prevents scrolling when menu is open
+    if (drawer.classList.contains("open")) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const coll = document.getElementsByClassName("collapsible");
+
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            
+            const content = this.nextElementSibling;
+
+            const isDisplayed = window.getComputedStyle(content).display === "block";
+
+            if (isDisplayed) {
+                const animation = content.animate([
+                    { height: content.scrollHeight + 'px', opacity: 1 },
+                    { height: '0px', opacity: 0 }
+                ], {
+                    duration: 300,
+                    easing: 'ease-in-out'
+                });
+
+                animation.onfinish = () => { 
+                    content.style.display = "none"; 
+                };
+            } else {
+                content.style.display = "block";
+                content.style.overflow = "hidden";
+                
+                content.animate([
+                    { height: '0px', opacity: 0 },
+                    { height: content.scrollHeight + 'px', opacity: 1 }
+                ], {
+                    duration: 300,
+                    easing: 'ease-in-out'
+                });
+            }
+        });
+    }
+});
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const backToTopBtn = document.getElementById("backToTop");
+        const bttImage = document.getElementById("bttIcon");
+
+        if (backToTopBtn && bttImage) {
+            const normalSrc = backToTopBtn.getAttribute("data-primary");
+            const hoverSrc = backToTopBtn.getAttribute("data-hover");
+
+            backToTopBtn.addEventListener("mouseover", () => {
+                bttImage.src = hoverSrc;
+            });
+
+            backToTopBtn.addEventListener("mouseout", () => {
+                bttImage.src = normalSrc;
+            });
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 500) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+    });
+
+
+    const logoLink = document.getElementById("logoLink");
+    const logoImg = document.getElementById("logoImg");
+
+    if (logoLink && logoImg) {
+        const primaryLogo = logoLink.getAttribute("data-primary");
+        const hoverLogo = logoLink.getAttribute("data-hover");
+
+        logoLink.addEventListener("mouseover", () => {
+            logoImg.src = hoverLogo;
+        });
+
+        logoLink.addEventListener("mouseout", () => {
+            logoImg.src = primaryLogo;
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active-reveal");
+            } else {
+                entry.target.classList.remove("active-reveal");
+            }
+        });
+    }, {
+        threshold: 0.1 
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+});
+</script>
+
+</body>
+
+</html>

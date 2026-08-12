@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+</head>
+
+<body>
+
+    <a href="#" id="backToTop" class="backToTop" 
+    data-primary="img/BavkTop-02.png" 
+    data-hover="img/BavkTop-03.png">
+        <img src="img/BavkTop-02.png" id="bttIcon" alt="Back to Top">
+    </a>
+
+    <div class="navigation">
+        <div class="leftNavigation">
+            <a href="index.html" id="logoLink" 
+            data-primary="img/Logo_Website-01.png" 
+            data-hover="img/Logo_Website-02.png">
+                <img src="img/Logo_Website-01.png" id="logoImg">
+            </a>
+        </div>
+        <div class="rightNavigation desktop-links">
+            <a class="notActiveNav" href="project.html">Projects</a>
+            <a class="notActiveNav" href="#aboutMeSection">About</a>
+            <a class="notActiveNav" href="#footerSection">Contact</a>
+        </div>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <img src="img/menu-01.png" alt="Menu">
+        </div>
+    </div>
+
+    <div id="sideDrawer" class="side-drawer">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="drawer-links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="#aboutMeSection">About</a>
+            <a href="#footerSection">Contact</a>
+        </div>
+    </div>
+
+    <div id="drawerOverlay" class="drawer-overlay" onclick="toggleMenu()"></div>
+
+    <a href="project.html" class="stickyBackButton">
+        <img src="img/bsckButton-01.png" alt="Back">
+        <p>Back</p>
+    </a>
+
+    <div class="individualProjectHeader">
+        <h2>KathaRkyat</h2>
+        
+        <img style="height: auto;" src="img/katharakyat/cover-01.png" alt="Project Banner">
+        
+        <div class="projectType">
+            <p>3D Modelling</p>
+            <p>Motion Capture</p>
+            <p>Motion Graphics</p>
+        </div>
+    </div>
+
+    <div class="projectDetailsIndividual">
+        
+        <div class="projectDetailsSlider">
+            <div class="projectSlider">
+                <div class="sliderIndicator"><img src="img/iconSliderProgress-01.png"></div>
+            </div>
+            <div class="projectA">
+                <a href="#overview" class="active">Overview</a>
+                <a href="#sketch">Sketch</a>
+                <a href="#brand">Branding</a>
+                <a href="#chara">Characters</a>
+                <a href="#product">Products</a>
+                <a href="#rl">Real Life existence</a>
+            </div>
+        </div>
+
+        <div class="projectDetailsExplanation">
+            <div id="overview" class="overview sectionProject">
+                <div class="overviewLeft">
+                    <h4>Year</h4>
+                    <p>2025</p>
+                    
+                    <h4>Project Type</h4>
+                    <p>Uni Project</p>
+
+                    <h4>My Role</h4>
+                    <p>Branding, Production, Research and Development, Asset production</p>
+                    <h4>Team Member</h4>
+                    <div class="teamIcons">
+                        <a href="#"><img src="img/Adinda.png"></a>
+                        <a href="#"><img src="img/Aya.png"></a>
+                        <a href="#"><img src="img/Sammy.png"></a>
+                        <a href="#"><img src="img/Jen.png"></a>
+                        <a href="#"><img src="img/Bjorn.png"></a>
+                        <a href="#"><img src="img/Francis.png"></a>
+                        <a href="#"><img src="img/Ica.png"></a>
+                    </div>
+                    
+                </div>
+                
+                <div class="overviewRight">
+                    <h4>Overview</h4>
+                    <p>Indonesian folklore, once a vital medium for passing down moral lessons, has faced a significant decline due to its struggle to transition from oral traditions into the modern digital landscape. Consequently, many of these stories remain confined to specific regions, making them difficult for wider audiences to access or preserve in the contemporary world.</p>
+                </div>
+            </div>
+
+            <div id="sketch" class="detail1 sectionProject">
+                <img src="img/katharakyat/KathaRakyat_DesignDocumentation.png">
+                <div class="explanation">
+                    <h4>Sketches</h4>
+                    <p>We will create products that raise awareness about folklores and serves as a medium of self-expression by connecting customer’s personalities with folklore characters through folklore inspired designs. The sketches are made based on 8 different regions in Indonesia with different folklore and clothing.</p>
+                </div>
+            </div>
+
+            <div id="brand" class="detail2 sectionProject">
+                <img src="img/katharakyat/branding-01.png">
+                <img src="img/katharakyat/branding-02.png">
+                <img src="img/katharakyat/branding-03.png">
+                <img src="img/katharakyat/branding-04.png">
+                <div class="explanation">
+                    <h4>Branding</h4>
+                    <p>KathaRakyat is a brand that is on a mission to bring Indonesian tradition folktales to the modern world! We provide trendy trinkets filled with blind boxes, art prints, and cute stickers. With this we aim to retell folklore stories from different Region in Indonesia to the younger generations.</p>
+                </div>
+            </div>
+
+            <div id="chara" class="detail1 sectionProject">
+                <img src="img/katharakyat/ala ala 1-01.png">
+                <div class="explanation">
+                    <h4>Characters</h4>
+                    <p>Further explanation of the process, texturing in Substance Painter, and the creative workflow involved in this phase.</p>
+                </div>
+            </div>
+
+            <div id="product" class="detail2 sectionProject">
+                <img src="img/katharakyat/BlindBox.png">
+                <img src="img/katharakyat/Trial.jpeg">
+                <img src="img/katharakyat/ArtPrint.jpg">
+                <img src="img/katharakyat/Characters.jpg">
+                <img src="img/katharakyat/Clothes.jpg">
+                <img src="img/katharakyat/Items.jpg">
+                <div class="explanation">
+                    <h4>Products</h4>
+                    <p>KathaRakyat products now include Blindbox with a Qr personality quiz included, Art prints, and Stickers.</p>
+                </div>
+            </div>
+
+            <div id="rl" class="detail1 sectionProject">
+                <img src="img/katharakyat/reallife-01.png">
+                <div class="explanation">
+                    <h4>Real Life Existence</h4>
+                    <p>KathaRakyat has joined many events and booth displays that has impacted many people on their views on Folklores. KathaRakyat has also reached onto the hands of Irene Umar, the Deputy Minister of Creative Economy of Indonesia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerSection" class="footer">
+        <div class="topFooter">
+            <div class="topTitle">
+                <h2>Get in Touch</h2>
+                <h3>Jakarta, Indonesia</h3>
+            </div>
+            
+            <div class="topContact">
+                <h3>graciella.natalie.04@gmail.com</h3>
+                <h3>+62877 7892 0831</h3>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div class="leftFooter">
+                <div class="navGrid">
+                    <a href="#">Home</a> <a href="project.html">Projects</a> <a href="#aboutMeSection">About</a>
+                    <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank">Instagram</a>
+                </div>
+            </div>
+
+            <div class="rightFooter">
+                <div class="socialGroup">
+                    <h4>Socials</h4>
+                    <div class="social">
+                        <a href="mailto:graciella.natalie.04@gmail.com"><img src="img/ICON-01.png"></a>
+                        <a href="https://wa.me/6287778920831" target="_blank"> <img src="img/ICON-02.png"></a>
+                        <a href="https://www.linkedin.com/in/graciella-natalie-b41511276"><img src="img/ICON-03.png"></a>
+                        <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank"><img src="img/ICON-04.png"></a>
+                        <a href="https://www.tiktok.com/@g_ella_04" target="_blank"><img src="img/ICON-05.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>© 2026 Graciella Natalie. All Rights Reserved.</p>
+        </div>
+    </div>
+
+<script>
+function toggleMenu() {
+    const drawer = document.getElementById("sideDrawer");
+    const overlay = document.getElementById("drawerOverlay");
+    
+    drawer.classList.toggle("open");
+    overlay.classList.toggle("active");
+    
+    // Prevents scrolling when menu is open
+    if (drawer.classList.contains("open")) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+window.addEventListener("scroll", () => {
+    const parentSection = document.querySelector(".projectDetailsIndividual");
+    const indicator = document.querySelector(".sliderIndicator");
+    const links = document.querySelectorAll(".projectA a");
+    const sections = document.querySelectorAll(".sectionProject");
+
+    const parentRect = parentSection.getBoundingClientRect();
+    
+    if (parentRect.top > 100) { 
+        links.forEach(l => l.classList.remove("active"));
+        indicator.style.top = "0px"; 
+        return; 
+    }
+
+    if (parentRect.bottom < 300) {
+        return;
+    }
+
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 250) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    links.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+
+            const linkCenter = link.offsetTop + (link.offsetHeight / 2);
+            const iconCenter = indicator.offsetHeight / 2;
+            
+            indicator.style.top = `${linkCenter - iconCenter}px`;
+        }
+    });
+});
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const backToTopBtn = document.getElementById("backToTop");
+        const bttImage = document.getElementById("bttIcon");
+
+        if (backToTopBtn && bttImage) {
+            const normalSrc = backToTopBtn.getAttribute("data-primary");
+            const hoverSrc = backToTopBtn.getAttribute("data-hover");
+
+            backToTopBtn.addEventListener("mouseover", () => {
+                bttImage.src = hoverSrc;
+            });
+
+            backToTopBtn.addEventListener("mouseout", () => {
+                bttImage.src = normalSrc;
+            });
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 500) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+    });
+
+    const logoLink = document.getElementById("logoLink");
+    const logoImg = document.getElementById("logoImg");
+
+    if (logoLink && logoImg) {
+        const primaryLogo = logoLink.getAttribute("data-primary");
+        const hoverLogo = logoLink.getAttribute("data-hover");
+
+        logoLink.addEventListener("mouseover", () => {
+            logoImg.src = hoverLogo;
+        });
+
+        logoLink.addEventListener("mouseout", () => {
+            logoImg.src = primaryLogo;
+        });
+    }
+</script>
+
+</body>
+
+</html>

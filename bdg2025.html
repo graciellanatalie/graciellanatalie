@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+</head>
+
+<body>
+    <a href="#" id="backToTop" class="backToTop" 
+    data-primary="img/BavkTop-02.png" 
+    data-hover="img/BavkTop-03.png">
+        <img src="img/BavkTop-02.png" id="bttIcon" alt="Back to Top">
+    </a>
+
+    <div class="navigation">
+        <div class="leftNavigation">
+            <a href="index.html" id="logoLink" 
+            data-primary="img/Logo_Website-01.png" 
+            data-hover="img/Logo_Website-02.png">
+                <img src="img/Logo_Website-01.png" id="logoImg">
+            </a>
+        </div>
+        <div class="rightNavigation desktop-links">
+            <a class="notActiveNav" href="project.html">Projects</a>
+            <a class="notActiveNav" href="#aboutMeSection">About</a>
+            <a class="notActiveNav" href="#footerSection">Contact</a>
+        </div>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <img src="img/menu-01.png" alt="Menu">
+        </div>
+    </div>
+
+    <div id="sideDrawer" class="side-drawer">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="drawer-links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="#aboutMeSection">About</a>
+            <a href="#footerSection">Contact</a>
+        </div>
+    </div>
+
+    <div id="drawerOverlay" class="drawer-overlay" onclick="toggleMenu()"></div>
+
+    <a href="project.html" class="stickyBackButton">
+        <img src="img/bsckButton-01.png" alt="Back">
+        <p>Back</p>
+    </a>
+
+    <div class="individualProjectHeader">
+        <h2>Bandung Light Festival</h2>
+        
+        <iframe 
+    src="https://www.youtube.com/embed/Ew70cX3HcZI" 
+    title="Project Video" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+</iframe>
+        
+        <div class="projectType">
+            <p>3D Modelling</p>
+            <p>3D Animation</p>
+            <p>Motion Graphics</p>
+            <p>Creative Direction</p>
+        </div>
+    </div>
+
+    <div class="projectDetailsIndividual">
+        
+        <div class="projectDetailsSlider">
+            <div class="projectSlider">
+                <div class="sliderIndicator"><img src="img/iconSliderProgress-01.png"></div>
+            </div>
+            <div class="projectA">
+                <a href="#overview" class="active">Overview</a>
+                <a href="#creative">Creative Direction</a>
+                <a href="#storyboard">Storyboard</a>
+                <a href="#2D">2D Asset</a>
+                <a href="#3D">3D Asset</a>
+                <a href="#animatic">Animatic</a>
+                <a href="#audio">Music</a>
+            </div>
+        </div>
+
+        <div class="projectDetailsExplanation">
+            <div id="overview" class="overview sectionProject">
+                <div class="overviewLeft">
+                    <h4>Year</h4>
+                    <p>2025</p>
+                    
+                    <h4>Project Type</h4>
+                    <p>Competition</p>
+
+                    <h4>My Role</h4>
+                    <p>Creative Director, Music Producer, 3D Modeller</p>
+                    
+                    <h4>Team Member</h4>
+                    <div class="teamIcons">
+                        <a href="#"><img src="img/Adinda.png"></a>
+                        <a href="#"><img src="img/Aya.png"></a>
+                        <a href="#"><img src="img/Dinda.png"></a>
+                        <a href="#"><img src="img/Feby.png"></a>
+                    </div>
+                </div>
+                
+                <div class="overviewRight">
+                    <h4>Overview</h4>
+                    <p>A projection mapping competition held in Laswi, bandung. This competition carried the them of Looking After Dark,  emphasizing that behind the bright lights of the city, there are spaces left in shadow, both literally and metaphorically.</p>
+                </div>
+            </div>
+
+            <div id="creative" class="detail1 sectionProject">
+                <img src="img/bandung/reference1-01.png">
+                <img src="img/bandung/moodboard1-01.png">
+                <div class="explanation">
+                    <h4>Creative Ideation</h4>
+                    <p>The research focused on the dual causes of urban darkness: the environmental impact of light pollution and the physical accumulation of electronic waste. This phase established a visual language where 'the dark' is represented by the discarded tech that shadows our modern cities.</p>
+                </div>
+            </div>
+
+            <div id="storyboard" class="detail1 sectionProject">
+                <img src="img/bandung/storyboard-01.png">
+                <div class="explanation">
+                    <h4>Storyboard</h4>
+                    <p>The narrative follows the last small star—a final beacon of hope—on a quest to revive light after a goddess's energy is consumed by darkness. The journey transitions through arcade-inspired challenges and industrial factories, culminating in a battle to reclaim energy from the manifestations of e-waste</p>
+                </div>
+            </div>
+
+            <div id="2D" class="detail1 sectionProject">
+                <img src="img/bandung/2dasset-01.png">
+                <div class="explanation">
+                    <h4>2D Modelling Assets</h4>
+                    <p>Ominous eye motifs that hunt for remaining light—alongside detailed factory silhouettes to illustrate industrial waste. These are complemented by blinking star VFX to add layers of movement and depth to the projection's atmosphere.</p>
+                </div>
+            </div>
+
+            <div id="3D" class="detail1 sectionProject">
+                <img src="img/bandung/3dasset-01.png">
+                <img src="img/bandung/3dasset2-01.png">
+                <div class="explanation">
+                    <h4>3D Modelling Assets</h4>
+                    <p>Utilizing Blender, I modeled vintage televisions to personify the 'evil' entity of e-waste. To contrast this, I created high-energy arcade assets—including slot machines, podiums, and coin machines—to represent the lively, pulsating energy of light and hope.</p>
+                </div>
+            </div>
+
+            <div id="animatic" class="detail1 sectionProject">
+                <video controls>
+                <source src="img/bandung/ANIMATIC BANDUNG.mp4" type="video/mp4">
+                </video>
+                <div class="explanation">
+                    <h4>Animatic</h4>
+                    <p>The animatic served as a technical blueprint to time the star’s journey through the arcade and factory environments. This allowed for precise synchronization between the narrative beats and the architectural features of the projection site.</p>
+                </div>
+            </div>
+
+            <div id="audio" class="detail1 sectionProject">
+                <img src="img/bandung/audio.PNG">
+                <div class="explanation">
+                    <h4>Music Production</h4>
+                    <p>The soundscape is driven by high-energy EDM to capture the intense conflict between light and dark. I integrated arcade SFX and glitchy electronic textures to reinforce the gaming-inspired visuals and the project's technological themes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerSection" class="footer">
+        <div class="topFooter">
+            <div class="topTitle">
+                <h2>Get in Touch</h2>
+                <h3>Jakarta, Indonesia</h3>
+            </div>
+            
+            <div class="topContact">
+                <h3>graciella.natalie.04@gmail.com</h3>
+                <h3>+62877 7892 0831</h3>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div class="leftFooter">
+                <div class="navGrid">
+                    <a href="#">Home</a> <a href="project.html">Projects</a> <a href="#aboutMeSection">About</a>
+                    <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank">Instagram</a>
+                </div>
+            </div>
+
+            <div class="rightFooter">
+                <div class="socialGroup">
+                    <h4>Socials</h4>
+                    <div class="social">
+                        <a href="mailto:graciella.natalie.04@gmail.com"><img src="img/ICON-01.png"></a>
+                        <a href="https://wa.me/6287778920831" target="_blank"> <img src="img/ICON-02.png"></a>
+                        <a href="https://www.linkedin.com/in/graciella-natalie-b41511276"><img src="img/ICON-03.png"></a>
+                        <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank"><img src="img/ICON-04.png"></a>
+                        <a href="https://www.tiktok.com/@g_ella_04" target="_blank"><img src="img/ICON-05.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>© 2026 Graciella Natalie. All Rights Reserved.</p>
+        </div>
+    </div>
+
+<script>
+function toggleMenu() {
+    const drawer = document.getElementById("sideDrawer");
+    const overlay = document.getElementById("drawerOverlay");
+    
+    drawer.classList.toggle("open");
+    overlay.classList.toggle("active");
+    
+    // Prevents scrolling when menu is open
+    if (drawer.classList.contains("open")) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+window.addEventListener("scroll", () => {
+    const parentSection = document.querySelector(".projectDetailsIndividual");
+    const indicator = document.querySelector(".sliderIndicator");
+    const links = document.querySelectorAll(".projectA a");
+    const sections = document.querySelectorAll(".sectionProject");
+
+    const parentRect = parentSection.getBoundingClientRect();
+    
+    if (parentRect.top > 100) { 
+        links.forEach(l => l.classList.remove("active"));
+        indicator.style.top = "0px"; 
+        return; 
+    }
+
+    if (parentRect.bottom < 300) {
+        return;
+    }
+
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 250) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    links.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+
+            const linkCenter = link.offsetTop + (link.offsetHeight / 2);
+            const iconCenter = indicator.offsetHeight / 2;
+            
+            indicator.style.top = `${linkCenter - iconCenter}px`;
+        }
+    });
+});
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const backToTopBtn = document.getElementById("backToTop");
+        const bttImage = document.getElementById("bttIcon");
+
+        if (backToTopBtn && bttImage) {
+            const normalSrc = backToTopBtn.getAttribute("data-primary");
+            const hoverSrc = backToTopBtn.getAttribute("data-hover");
+
+            backToTopBtn.addEventListener("mouseover", () => {
+                bttImage.src = hoverSrc;
+            });
+
+            backToTopBtn.addEventListener("mouseout", () => {
+                bttImage.src = normalSrc;
+            });
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 500) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+    });
+
+    const logoLink = document.getElementById("logoLink");
+    const logoImg = document.getElementById("logoImg");
+
+    if (logoLink && logoImg) {
+        const primaryLogo = logoLink.getAttribute("data-primary");
+        const hoverLogo = logoLink.getAttribute("data-hover");
+
+        logoLink.addEventListener("mouseover", () => {
+            logoImg.src = hoverLogo;
+        });
+
+        logoLink.addEventListener("mouseout", () => {
+            logoImg.src = primaryLogo;
+        });
+    }
+</script>
+
+</body>
+
+</html>

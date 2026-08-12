@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+</head>
+
+<body>
+
+    <a href="#" id="backToTop" class="backToTop" 
+    data-primary="img/BavkTop-02.png" 
+    data-hover="img/BavkTop-03.png">
+        <img src="img/BavkTop-02.png" id="bttIcon" alt="Back to Top">
+    </a>
+
+    <div class="navigation">
+        <div class="leftNavigation">
+            <a href="index.html" id="logoLink" 
+            data-primary="img/Logo_Website-01.png" 
+            data-hover="img/Logo_Website-02.png">
+                <img src="img/Logo_Website-01.png" id="logoImg">
+            </a>
+        </div>
+        <div class="rightNavigation desktop-links">
+            <a class="notActiveNav" href="project.html">Projects</a>
+            <a class="notActiveNav" href="#aboutMeSection">About</a>
+            <a class="notActiveNav" href="#footerSection">Contact</a>
+        </div>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <img src="img/menu-01.png" alt="Menu">
+        </div>
+    </div>
+
+    <div id="sideDrawer" class="side-drawer">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="drawer-links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="#aboutMeSection">About</a>
+            <a href="#footerSection">Contact</a>
+        </div>
+    </div>
+
+    <div id="drawerOverlay" class="drawer-overlay" onclick="toggleMenu()"></div>
+
+    <div class="projectHeader">
+        <p class="hoverName">
+            <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
+        </p>
+        <p>Every Projects are designed to reflect problem solving abilities combined with appealing visuals.</p>
+    </div>
+
+
+    <div class="library">
+        <div class="categoryLibrary">
+            <a class="filter-btn active" data-filter="all">All</a>
+            <a class="filter-btn" data-filter="mapping">Projection Mapping</a>
+            <a class="filter-btn" data-filter="motion">Motion Graphics</a>
+            <a class="filter-btn" data-filter="booth">Booth Design</a>
+            <a class="filter-btn" data-filter="branding">Branding</a>
+        </div>
+
+        <div id="cursorPopUp" class="popUp">View Project</div>
+
+        <div class="mainLibrary">
+            <!-- 1. 3D Design Content -->
+            <a href="terang2025.html" class="contentLibrary" data-category="mapping" data-popUp="3D Modelling, 3D Animation, Music Production, and Creative Directing">
+                <div><img src="img/terang2025/thumbnail.jpg"></div>
+                <h5>TERANG 2025</h5>
+                <p>Projection Mapping based on the topic ROJAK.</p>
+            </a>
+
+            <a href="terang2024.html" class="contentLibrary" data-category="mapping" data-popUp="3D Modelling, 3D Animation, Motion Graphics, and Creative Directing">
+                <div><img src="img/terang2024/cover-01.png"></div>
+                <h5>TERANG 2024</h5>
+                <p>Projection Mapping based on the theme of culture combination.</p>
+            </a>
+
+            <a href="bdg2025.html" class="contentLibrary" data-category="mapping" data-popUp="3D Modelling, 3D Animation, Music Production, and Creative Directing">
+                <div><img src="img/bandung/cover-01.png"></div>
+                <h5>Bandung Light Festival</h5>
+                <p>Projection Mapping with the theme of light after dark.</p>
+            </a>
+
+            <a href="oldtown.html" class="contentLibrary" data-category="mapping" data-popUp="Creative Directing, Character Design, and research development">
+                <div><img src="img/oldtown/cover.png"></div>
+                <h5>Old Town Festival</h5>
+                <p>Projection Mapping to celebrate Jakarta's birthday.</p>
+            </a>
+
+            <!-- 2. Motion Graphic Content -->
+            <a href="mocap.html" class="contentLibrary" data-category="motion" data-popUp="Motion capture, Motion graphics, 3D Modelling, 3D animation">
+                <div><img src="img/4.jpg"></div>
+                <h5>Ashita Nova</h5>
+                <p>Motion Capture 3D animation about New year celebration.</p>
+            </a>
+
+            <!-- 3. 2D Design Content -->
+            <a href="platof.html" class="contentLibrary" data-category="booth" data-popUp="Booth Design, 3D Modelling, Branding">
+                <div><img src="img/platof/PLATOF RENDER (1).png"></div>
+                <h5>PLATOF</h5>
+                <p>Booth Design based on the concept of futuristic shoes.</p>
+            </a>
+
+            <!-- 4. Branding -->
+            <a href="katharakyat.html" class="contentLibrary" data-category="branding" data-popUp="Branding, Research development, production, and coding">
+                <div><img src="img/katharakyat/cover-01.png"></div>
+                <h5>KathaRakyat</h5>
+                <p>Merging traditional folklore with modern trendy products.</p>
+            </a>
+        </div>
+    </div>
+
+    </div>
+    
+    <div id="footerSection" class="footer">
+        <div class="topFooter">
+            <div class="topTitle">
+                <h2>Get in Touch</h2>
+                <h3>Jakarta, Indonesia</h3>
+            </div>
+            
+            <div class="topContact">
+                <h3>graciella.natalie.04@gmail.com</h3>
+                <h3>+62877 7892 0831</h3>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div class="leftFooter">
+                <div class="navGrid">
+                    <a href="#">Home</a> <a href="project.html">Projects</a> <a href="#aboutMeSection">About</a>
+                    <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank">Instagram</a>
+                </div>
+            </div>
+
+            <div class="rightFooter">
+                <div class="socialGroup">
+                    <h4>Socials</h4>
+                    <div class="social">
+                        <a href="mailto:graciella.natalie.04@gmail.com"><img src="img/ICON-01.png"></a>
+                        <a href="https://wa.me/6287778920831" target="_blank"> <img src="img/ICON-02.png"></a>
+                        <a href="https://www.linkedin.com/in/graciella-natalie-b41511276"><img src="img/ICON-03.png"></a>
+                        <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank"><img src="img/ICON-04.png"></a>
+                        <a href="https://www.tiktok.com/@g_ella_04" target="_blank"><img src="img/ICON-05.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>© 2026 Graciella Natalie. All Rights Reserved.</p>
+        </div>
+    </div>
+
+<script>
+function toggleMenu() {
+    const drawer = document.getElementById("sideDrawer");
+    const overlay = document.getElementById("drawerOverlay");
+    
+    drawer.classList.toggle("open");
+    overlay.classList.toggle("active");
+    
+    // Prevents scrolling when menu is open
+    if (drawer.classList.contains("open")) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const libraryItems = document.querySelectorAll(".contentLibrary");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", (e) => {
+                e.preventDefault();
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                const filterValue = button.getAttribute("data-filter");
+
+                // 2. Filter the items
+                libraryItems.forEach(item => {
+                    const itemCategory = item.getAttribute("data-category");
+
+                    if (filterValue === "all" || filterValue === itemCategory) {
+                        item.classList.remove("hide");
+                    } else {
+                        item.classList.add("hide");
+                    }
+                });
+            });
+        });
+    });
+
+
+
+
+
+    const popUp = document.getElementById('cursorPopUp');
+    const cards = document.querySelectorAll('.contentLibrary');
+
+    window.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        
+        popUp.style.left = x + 'px';
+        popUp.style.top = y + 'px';
+    });
+
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            popUp.innerText = card.getAttribute('data-popUp');
+            popUp.classList.add('active');
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            popUp.classList.remove('active');
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const backToTopBtn = document.getElementById("backToTop");
+        const bttImage = document.getElementById("bttIcon");
+
+        if (backToTopBtn && bttImage) {
+            const normalSrc = backToTopBtn.getAttribute("data-primary");
+            const hoverSrc = backToTopBtn.getAttribute("data-hover");
+
+            backToTopBtn.addEventListener("mouseover", () => {
+                bttImage.src = hoverSrc;
+            });
+
+            backToTopBtn.addEventListener("mouseout", () => {
+                bttImage.src = normalSrc;
+            });
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 500) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+    });
+
+    const logoLink = document.getElementById("logoLink");
+    const logoImg = document.getElementById("logoImg");
+
+    if (logoLink && logoImg) {
+        const primaryLogo = logoLink.getAttribute("data-primary");
+        const hoverLogo = logoLink.getAttribute("data-hover");
+
+        logoLink.addEventListener("mouseover", () => {
+            logoImg.src = hoverLogo;
+        });
+
+        logoLink.addEventListener("mouseout", () => {
+            logoImg.src = primaryLogo;
+        });
+    }
+</script>
+
+</body>
+
+</html>

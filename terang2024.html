@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+</head>
+
+<body>
+    <a href="#" id="backToTop" class="backToTop" 
+    data-primary="img/BavkTop-02.png" 
+    data-hover="img/BavkTop-03.png">
+        <img src="img/BavkTop-02.png" id="bttIcon" alt="Back to Top">
+    </a>
+
+    <div class="navigation">
+        <div class="leftNavigation">
+            <a href="index.html" id="logoLink" 
+            data-primary="img/Logo_Website-01.png" 
+            data-hover="img/Logo_Website-02.png">
+                <img src="img/Logo_Website-01.png" id="logoImg">
+            </a>
+        </div>
+        <div class="rightNavigation desktop-links">
+            <a class="notActiveNav" href="project.html">Projects</a>
+            <a class="notActiveNav" href="#aboutMeSection">About</a>
+            <a class="notActiveNav" href="#footerSection">Contact</a>
+        </div>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <img src="img/menu-01.png" alt="Menu">
+        </div>
+    </div>
+
+    <div id="sideDrawer" class="side-drawer">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="drawer-links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="#aboutMeSection">About</a>
+            <a href="#footerSection">Contact</a>
+        </div>
+    </div>
+
+    <div id="drawerOverlay" class="drawer-overlay" onclick="toggleMenu()"></div>
+
+    <a href="project.html" class="stickyBackButton">
+        <img src="img/bsckButton-01.png" alt="Back">
+        <p>Back</p>
+    </a>
+
+    <div class="individualProjectHeader">
+        <h2>TERANG 2024</h2>
+        
+        <iframe 
+        src="https://www.youtube.com/embed/iEILV4cuqPM" 
+        title="Project Video" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+        
+        <div class="projectType">
+            <p>3D Modelling</p>
+            <p>Character Design</p>
+            <p>Motion Graphics</p>
+            <p>Creative Direction</p>
+        </div>
+    </div>
+
+    <div class="projectDetailsIndividual">
+        
+        <div class="projectDetailsSlider">
+            <div class="projectSlider">
+                <div class="sliderIndicator"><img src="img/iconSliderProgress-01.png"></div>
+            </div>
+            <div class="projectA">
+                <a href="#overview" class="active">Overview</a>
+                <a href="#creative">Creative Direction</a>
+                <a href="#sketch">Sketches</a>
+                <a href="#storyboard">Storyboard</a>
+                <a href="#character">Character Design</a>
+                <a href="#3D">3D Asset</a>
+                <a href="#animatic">Animatic</a>
+                <a href="#motion">Motion Graphics</a>
+            </div>
+        </div>
+
+        <div class="projectDetailsExplanation">
+            <div id="overview" class="overview sectionProject">
+                <div class="overviewLeft">
+                    <h4>Year</h4>
+                    <p>2024</p>
+                    
+                    <h4>Project Type</h4>
+                    <p>Competition</p>
+
+                    <h4>My Role</h4>
+                    <p>Creative Director, 3D Moeller, Character Designer, Motion Graphic</p>
+                    
+                    <h4>Team Member</h4>
+                    <div class="teamIcons">
+                        <a href="#"><img src="img/Adinda.png"></a>
+                        <a href="#"><img src="img/Aya.png"></a>
+                        <a href="#"><img src="img/Dinda.png"></a>
+                        <a href="#"><img src="img/Feby.png"></a>
+                        <a href="#"><img src="img/Shiny.png"></a>
+                        <a href="#"><img src="img/Joce.png"></a>
+                        <a href="#"><img src="img/Jen.png"></a>
+                    </div>
+                </div>
+                
+                <div class="overviewRight">
+                    <h4>Overview</h4>
+                    <p>Terang 2024 is a projection mapping competition held by wearefilamen in Matic, Kuala Lumpur. This competition carried the theme Cultural Futurism, which explores the fusion of Malaysia’s tradition and technology.</p>
+                </div>
+            </div>
+
+            <div id="creative" class="detail1 sectionProject">
+                <img src="img//terang2024/reference.png">
+                <img src="img//terang2024/moodboard.png">
+                <div class="explanation">
+                    <h4>Creative Ideation</h4>
+                    <p>Flying through a journey exploring the beauty of Malaysia, traversing the dimensions of time and culture. Audiences will explore the rich heritage of Malaysia, seamlessly blending the traditional elements of Malay, Chinese, and Indian cultures. Through harmonious visuals and sound, we weave a tapestry that connects the past to the future. </p>
+                </div>
+            </div>
+
+            <div id="sketch" class="detail1 sectionProject">
+                <img src="img/terang2024/sketch-01.png">
+                <div class="explanation">
+                    <h4>Sketches</h4>
+                    <p>By fusing art, technology, and innovation, we offer a glimpse into how Malaysia’s diverse cultural roots continue to evolve and flourish in a futuristic landscape.</p>
+                </div>
+            </div>
+
+            <div id="storyboard" class="detail1 sectionProject">
+                <img src="img/terang2024/storyboard1-01.png">
+                <img src="img/terang2024/storyboard2-01.png">
+                <div class="explanation">
+                    <h4>Storyboard</h4>
+                    <p>The storyboard is developed based on research and development with scenes detail including notes, time, sfx, vfx, and gfx.</p>
+                </div>
+            </div>
+
+            <div id="character" class="detail1 sectionProject">
+                <img src="img/terang2024/mascot terang-01.png">
+                <div class="explanation">
+                    <h4>Character Design</h4>
+                    <p>The name Azahra, has the meaning of "radiant" or “shining.” <br><br>The outfit she wears is a tiger costume that is inspired by Malaysia’s representative animal, Malayan Tiger. Her outfit which consist of a Poncho and skirt are both inspired by Malaysian traditional clothes. Azahra's skirt is inspired by the traditional baju Kurung. She also wears the signature sandal. <br><br>This name was chosen because we hope that Azahra can be a light bringing Malaysia’s many cultures to the futuristic era.</p>
+                </div>
+            </div>
+
+            <div id="3D" class="detail1 sectionProject">
+                <img src="img/terang2024/3dasset-01.png">
+                <div class="explanation">
+                    <h4>3D Modelling Assets</h4>
+                    <p>3D Building is made based on the real building to capture transition in between scenes.</p>
+                </div>
+            </div>
+
+            <div id="animatic" class="detail1 sectionProject">
+                <video controls>
+                <source src="img/terang2024/Animatic_TERANG_Heritage of Tomorrow_Sandyakala Team.mp4" type="video/mp4">
+                </video>
+                <div class="explanation">
+                    <h4>Animatic</h4>
+                    <p>This journey explores Malaysia’s cultural evolution through four phases—Malay, Chinese, Indian, and Futuristic—using traditional batik, art, and vibrant patterns to celebrate a rich heritage. Guided by Azahra, the experience culminates in a vision of a harmonious future where diverse ethnicities coexist and flourish within an evolving landscape.</p>
+                </div>
+            </div>
+
+            <div id="motion" class="detail2 sectionProject">
+                <img src="img//terang2024/motion1.gif">
+                <img src="img//terang2024/motion2.gif">
+                <div class="explanation">
+                    <h4>Motion Graphics</h4>
+                    <p>Scenes for build up and cultural combination where the Wau Bulan finished going through all scenarios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerSection" class="footer">
+        <div class="topFooter">
+            <div class="topTitle">
+                <h2>Get in Touch</h2>
+                <h3>Jakarta, Indonesia</h3>
+            </div>
+            
+            <div class="topContact">
+                <h3>graciella.natalie.04@gmail.com</h3>
+                <h3>+62877 7892 0831</h3>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div class="leftFooter">
+                <div class="navGrid">
+                    <a href="#">Home</a> <a href="project.html">Projects</a> <a href="#aboutMeSection">About</a>
+                    <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank">Instagram</a>
+                </div>
+            </div>
+
+            <div class="rightFooter">
+                <div class="socialGroup">
+                    <h4>Socials</h4>
+                    <div class="social">
+                        <a href="mailto:graciella.natalie.04@gmail.com"><img src="img/ICON-01.png"></a>
+                        <a href="https://wa.me/6287778920831" target="_blank"> <img src="img/ICON-02.png"></a>
+                        <a href="https://www.linkedin.com/in/graciella-natalie-b41511276"><img src="img/ICON-03.png"></a>
+                        <a href="https://www.instagram.com/graciella.natalie.04/" target="_blank"><img src="img/ICON-04.png"></a>
+                        <a href="https://www.tiktok.com/@g_ella_04" target="_blank"><img src="img/ICON-05.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>© 2026 Graciella Natalie. All Rights Reserved.</p>
+        </div>
+    </div>
+
+<script>
+function toggleMenu() {
+    const drawer = document.getElementById("sideDrawer");
+    const overlay = document.getElementById("drawerOverlay");
+    
+    drawer.classList.toggle("open");
+    overlay.classList.toggle("active");
+    
+    // Prevents scrolling when menu is open
+    if (drawer.classList.contains("open")) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+window.addEventListener("scroll", () => {
+    const parentSection = document.querySelector(".projectDetailsIndividual");
+    const indicator = document.querySelector(".sliderIndicator");
+    const links = document.querySelectorAll(".projectA a");
+    const sections = document.querySelectorAll(".sectionProject");
+
+    const parentRect = parentSection.getBoundingClientRect();
+    
+    if (parentRect.top > 100) { 
+        links.forEach(l => l.classList.remove("active"));
+        indicator.style.top = "0px"; 
+        return; 
+    }
+
+    if (parentRect.bottom < 300) {
+        return;
+    }
+
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 250) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    links.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+
+            const linkCenter = link.offsetTop + (link.offsetHeight / 2);
+            const iconCenter = indicator.offsetHeight / 2;
+            
+            indicator.style.top = `${linkCenter - iconCenter}px`;
+        }
+    });
+});
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const backToTopBtn = document.getElementById("backToTop");
+        const bttImage = document.getElementById("bttIcon");
+
+        if (backToTopBtn && bttImage) {
+            const normalSrc = backToTopBtn.getAttribute("data-primary");
+            const hoverSrc = backToTopBtn.getAttribute("data-hover");
+
+            backToTopBtn.addEventListener("mouseover", () => {
+                bttImage.src = hoverSrc;
+            });
+
+            backToTopBtn.addEventListener("mouseout", () => {
+                bttImage.src = normalSrc;
+            });
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 500) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+    });
+
+    const logoLink = document.getElementById("logoLink");
+    const logoImg = document.getElementById("logoImg");
+
+    if (logoLink && logoImg) {
+        const primaryLogo = logoLink.getAttribute("data-primary");
+        const hoverLogo = logoLink.getAttribute("data-hover");
+
+        logoLink.addEventListener("mouseover", () => {
+            logoImg.src = hoverLogo;
+        });
+
+        logoLink.addEventListener("mouseout", () => {
+            logoImg.src = primaryLogo;
+        });
+    }
+</script>
+
+</body>
+
+</html>
