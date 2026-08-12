@@ -2752,7 +2752,7 @@ p, a {
         margin-left: 0;
         border-radius: 4vw;
         background-color: #624cfd;
-        pointer-events: none;
+        pointer-events: auto;
     }
 
     .selectedPanel:hover {
@@ -2772,7 +2772,7 @@ p, a {
     }
 
     .selectedPanel h2 { font-size: 7vw; margin-top: 3vw; padding: 0 5vw; color: #e7e8ec;}
-    .selectedPanel p { font-size: 3.5vw; padding: 0 5vw; margin-bottom: 5vw;}
+    .selectedPanel p { font-size: 3.5vw; padding: 0 5vw; margin-bottom: 5vw; line-height: 2vh;}
     .selectedPanel h1 { font-size: 12vw; color: #e7e8ec;}
 
     .aboutMePage {
